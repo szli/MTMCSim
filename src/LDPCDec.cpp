@@ -1,4 +1,5 @@
 #include "LDPCDec.h"
+#include <cstdlib>
 
 LDPCDec::LDPCDec(int _nRows, int _nCols, int _maxRowDeg, int _maxColDeg, char* HRowProfileFile, char* HRowFile, char* HColProfileFile)
 {
