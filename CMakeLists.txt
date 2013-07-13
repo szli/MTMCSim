@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8.11)
+cmake_minimum_required (VERSION 2.6.0)
 project (MTMCSim)
 
 
@@ -12,24 +12,27 @@ set (srcfiles ${found})
 file (GLOB found ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h)
 set (includefiles ${found})
 
-set(BOOST_INCLUDEDIR ${BOOST_ROOT})
 set(BOOST_USE_STATIC_LIBS OFF)
 
-find_package(Boost 1.47 REQUIRED COMPONENTS thread)
+find_package(Boost REQUIRED COMPONENTS thread)
 
+info(Boost_FOUND)
+info(Boost_INCLUDE_DIRS)
 
-include_directories (${CMAKE_CURRENT_SOURCE_DIR}/include/ ${BOOST_INCLUDEDIR})
+include_directories (${CMAKE_CURRENT_SOURCE_DIR}/include/ ${Boost_INCLUDE_DIRS})
 link_directories( ${BOOST_ROOT}/lib)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
-
 
 add_executable (MTMCSim ${srcfiles})
 
 #add_library(boost_thread SHARED IMPORTED)
 
+info(Boost_THREAD_LIBRARY)
+
 #The ${Boost_THREAD_LIBRARY} has format optimized;filename;debug;filename, we only want file name
 
+if ( CMAKE_SYSTEM_NAME STREQUAL "Windows")
 if ( CMAKE_BUILD_TYPE STREQUAL "Debug")
     set (Boost_THREAD_LIBFILE ${Boost_THREAD_LIBRARY})
     list(REMOVE_AT Boost_THREAD_LIBFILE 0 1 2)
@@ -37,8 +40,8 @@ else()
     set (Boost_THREAD_LIBFILE ${Boost_THREAD_LIBRARY})
     list(REMOVE_AT Boost_THREAD_LIBFILE 0 2 3)        
 endif()
+endif()
 
-info(Boost_THREAD_LIBFILE)
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
     string(REPLACE .lib .dll dll_loc ${Boost_THREAD_LIBFILE})
@@ -53,8 +56,7 @@ add_custom_command(TARGET MTMCSim
                     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${BOOST_FILES} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 
-
-target_include_directories( MTMCSim PUBLIC ${BOOST_INCLUDEDIR} )
+include_directories( ${BOOST_INCLUDEDIR} )
 target_link_libraries( MTMCSim ${Boost_THREAD_LIBRARY} )
 
 
