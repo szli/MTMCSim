@@ -172,7 +172,7 @@ void KVChanSim::oneThread(shared_ptr<RNObj> pobj, const MCThreadInfo& threadInfo
 {
     ThreadWorkSpace& ws = *(workspaceVec[threadInfo.threadID]);
     
-    shared_ptr<XNSeq> pxnseq = dynamic_pointer_cast<XNSeq, RNObj>(pobj);
+    shared_ptr<XNSeq> pxnseq = boost::dynamic_pointer_cast<XNSeq, RNObj>(pobj);
 
     oneStep(pxnseq->xSeq, pxnseq->normRV, ws);
 
