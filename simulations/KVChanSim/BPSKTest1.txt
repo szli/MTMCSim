@@ -1,6 +1,6 @@
 alphabet size = 16
-code length = 64
-info length = 32
+code length = 15
+info length = 11
 SNR = 7
 seed  = 50
 lambda = 4
