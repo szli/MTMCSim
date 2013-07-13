@@ -23,7 +23,7 @@ info(Boost_FOUND)
 include_directories (${CMAKE_CURRENT_SOURCE_DIR}/include/ ${Boost_INCLUDE_DIRS})
 link_directories( ${BOOST_ROOT}/lib)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/simulations) # could be bin  
 
 add_executable (MTMCSim ${srcfiles})
 
