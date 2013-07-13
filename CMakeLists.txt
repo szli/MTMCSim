@@ -57,7 +57,8 @@ add_custom_command(TARGET MTMCSim
                     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${BOOST_FILES} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 
-include_directories( ${BOOST_INCLUDEDIR} )
+
+#target_include_directories( MTMCSim PRIVATE ${Boost_INCLUDE_DIRS} )
 
 target_link_libraries( MTMCSim ${Boost_THREAD_LIBRARY} )
 
