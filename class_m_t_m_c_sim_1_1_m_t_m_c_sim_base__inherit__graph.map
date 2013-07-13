@@ -1,0 +1,11 @@
+<map id="MTMCSim::MTMCSimBase" name="MTMCSim::MTMCSimBase">
+<area shape="rect" id="node2" href="$class_m_t_m_c_sim_1_1_m_s_a_l_sim.html" title="Simulator for multistage LDPC for two source distributed source coding. " alt="" coords="255,5,399,32"/>
+<area shape="rect" id="node3" href="$class_m_t_m_c_sim_1_1_mul_sour_sim.html" title="Multiple source linear correlation model simulation. " alt="" coords="247,56,406,83"/>
+<area shape="rect" id="node4" href="$class_m_t_m_c_sim_1_1_mul_sour_sim_rate.html" title="Multiple source linear correlation model simulation. " alt="" coords="234,107,419,133"/>
+<area shape="rect" id="node5" href="$class_m_t_m_c_sim_1_1_mul_stage_sim.html" title="Simulator for multistage LDPC for two source distributed source coding. " alt="" coords="244,157,409,184"/>
+<area shape="rect" id="node6" href="$class_m_t_m_c_sim_1_1_mul_stage_sim_rate.html" title="Simulator for multistage LDPC for two source distributed source coding. " alt="" coords="231,208,422,235"/>
+<area shape="rect" id="node7" href="$class_m_t_m_c_sim_1_1_multi_run_simu_base.html" title="The base class for the simulators that are multi&#45;runnable and support our multithread interface..." alt="" coords="229,259,424,285"/>
+<area shape="rect" id="node8" href="$class_m_t_m_c_sim_1_1_d_s_c_k_v_sim.html" title="MTMCSim::DSCKVSim" alt="" coords="486,208,637,235"/>
+<area shape="rect" id="node9" href="$class_m_t_m_c_sim_1_1_d_s_c_k_v_sim_rate.html" title="MTMCSim::DSCKVSimRate" alt="" coords="473,259,650,285"/>
+<area shape="rect" id="node10" href="$class_m_t_m_c_sim_1_1_k_v_chan_sim.html" title="Koetter&#45;Vardy decoding simulation for channel coding. " alt="" coords="483,309,639,336"/>
+</map>

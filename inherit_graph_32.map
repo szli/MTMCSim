@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_m_t_m_c_sim_1_1_output_u_i.html" title="(Dummy) base class for output. " alt="" coords="6,31,146,57"/>
+<area shape="rect" id="node2" href="$class_m_t_m_c_sim_1_1_disp_u_i.html" title="For displaying infomation on screen. " alt="" coords="209,5,335,32"/>
+<area shape="rect" id="node4" href="$class_m_t_m_c_sim_1_1_text_save_u_i.html" title="An output UI that saves to a text file. " alt="" coords="195,56,349,83"/>
+<area shape="rect" id="node3" href="$class_m_t_m_c_sim_1_1_d_o_s_disp_u_i.html" title="MTMCSim::DOSDispUI" alt="" coords="398,5,549,32"/>
+</map>

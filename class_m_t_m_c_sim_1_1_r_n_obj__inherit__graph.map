@@ -1,0 +1,10 @@
+<map id="MTMCSim::RNObj" name="MTMCSim::RNObj">
+<area shape="rect" id="node2" href="$class_m_t_m_c_sim_1_1_d_s_c_k_v_sim_1_1_x_y_seq.html" title="A random number object for this problem is two correlated sequence X and Y. " alt="" coords="197,5,358,46"/>
+<area shape="rect" id="node3" href="$class_m_t_m_c_sim_1_1_d_s_c_k_v_sim_rate_1_1_x_y_seq.html" title="A random number object for this problem is two correlated sequence X and Y. " alt="" coords="189,70,366,111"/>
+<area shape="rect" id="node4" href="$class_m_t_m_c_sim_1_1_k_v_chan_sim_1_1_x_n_seq.html" title="A random number object for this problem is one source sequence and one channel noise sequence (standa..." alt="" coords="199,135,355,177"/>
+<area shape="rect" id="node5" href="$class_m_t_m_c_sim_1_1_m_s_a_l_sim_1_1_x_y_seq.html" title="A random number object for this problem is two correlated sequence X and Y. " alt="" coords="182,201,373,228"/>
+<area shape="rect" id="node6" href="$class_m_t_m_c_sim_1_1_mul_sour_sim_1_1_e_seq.html" title="&quot;Error&quot; sequences. " alt="" coords="198,253,357,294"/>
+<area shape="rect" id="node7" href="$class_m_t_m_c_sim_1_1_mul_sour_sim_rate_1_1_e_seq.html" title="&quot;Error&quot; sequences. " alt="" coords="185,318,370,359"/>
+<area shape="rect" id="node8" href="$class_m_t_m_c_sim_1_1_mul_stage_sim_1_1_x_y_seq.html" title="A random number object for this problem is two correlated sequence X and Y. " alt="" coords="195,383,360,425"/>
+<area shape="rect" id="node9" href="$class_m_t_m_c_sim_1_1_mul_stage_sim_rate_1_1_x_y_seq.html" title="A random number object for this problem is two correlated sequence X and Y. " alt="" coords="182,449,373,490"/>
+</map>

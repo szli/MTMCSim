@@ -1,0 +1,5 @@
+<map id="MTMCSim::OutputUI" name="MTMCSim::OutputUI">
+<area shape="rect" id="node2" href="$class_m_t_m_c_sim_1_1_disp_u_i.html" title="For displaying infomation on screen. " alt="" coords="17,80,143,107"/>
+<area shape="rect" id="node4" href="$class_m_t_m_c_sim_1_1_text_save_u_i.html" title="An output UI that saves to a text file. " alt="" coords="168,80,323,107"/>
+<area shape="rect" id="node3" href="$class_m_t_m_c_sim_1_1_d_o_s_disp_u_i.html" title="MTMCSim::DOSDispUI" alt="" coords="5,155,155,181"/>
+</map>
