@@ -4,11 +4,7 @@
 *   Author: Shizheng Li
 *   This project was done when he was a PhD student at Dept. of Electrical and Computer Engineering, Iowa State University
 *
-*   Contact: szli AT iastate.edu
-*
-*
-*   All rights reserved. Copyright (c) 2010 Shizheng Li
-
+*   Contact: szli.code AT gmail
 *   
 *   \section sys System Requirement
 *   The project is portable between Windows and Linux. Tested under Windows 7 32-bit and 64-bit, Visual Studio 2010 and Fedora 13 with Gcc 4.4.
@@ -18,20 +14,17 @@
 *   To obtain high performance, the hardware should offer good parallel compute capability. Typically the number of working threads equals to 
 *   the number of CPU cores. Tested under Intel Core Duo T8100, Intel Core i7-950, Intel Core2 6400 and Intel Xeon X5650. 
 *
-*   
-*   
+*     
 *   \section intro Introduction
 *   This project indends to have a generic platform for mulththreaded Monte Carlo simulations. As long as the simulation is written
 *   according to the interface (abstract class MTMCSim::MTMCSimBase), the multithreading will be handled behind the scene. The multithreading
 *   scheduler runs under boss-worker mode. The boss thread generates random number sequences and the worker threads performs
 *   specified simulations. In current version, there is only one random number generator (RNG), thus one boss thread. We may have parallel RNG in the 
 future. Therefore, it is best suited for simulations where the RN generation is simple compared to the algorithm run at each instance of the simulation. 
-
 The project is designed in a purely object oriented manner in C++. This makes the project easy to maintain and extend. Almost all pointers 
 in this project are boost::shared_ptr. All containers are from C++ STL. 
-
-    In this project, we call the data that gives one sample output to be a frame. For example, in communications theory, a frame is a data frame to be transmitted and received. In Monte Carlo simulation, we simulation 
-    many frames to get many samples and average over them. This terminalogy is used in communication and coding theory. In other fields, the terminalogy could be different.
+*    In this project, we call the data that gives one sample output to be a frame. For example, in communications theory, a frame is a data frame to be transmitted and received. In Monte Carlo simulation, we simulation 
+*    many frames to get many samples and average over them. This terminalogy is used in communication and coding theory. In other fields, the terminalogy could be different.
 *   
 *   This project also provides a friendly user interface. All the inputs are handled through text files and the user can 
 *   change the display and save format easily. It is not hard to provide a Python interface given the current design. 
@@ -82,8 +75,6 @@ The user interface is written in a pure OO manner and intended to potentially su
 *   multiple run mode = 0   % 1 if automatically run simulatin using different parameters, the simulation should be MTMCSim::MultiRunnable.\n
 *   no simulation = 0 % If this is 1, we do not run the simulation. Only displays the parameters and computed results. \n
 *</em>
-
-
 *   In general, the input files in this project have the form like above. Each effecive line has the format Parameter name = Parameter value,
 *   and the space or tab before and after the "=" will be ignored. Any line without "=" will be comment line. In an effective line, any string after % 
 *   will be comments. 
@@ -135,7 +126,6 @@ virtual function MTMCSim::CompRes::setMapping() to convert the results in data m
 computed results into string using given format.
 
 *   \section howto How to write a simulation
-*
 *   To write a specified simulation, a simulator class should be derived from  MTMCSim::MTMCSimBase class. See the doc of MTMCSim::MTMCSimBase
 *   for more information. 
 
