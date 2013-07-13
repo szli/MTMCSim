@@ -1,0 +1,13 @@
+*************  KV channel coding simulator ********** by Shizheng Li
+Parameters: Profile name @profile file name@
+
+Alphabet Size $alphabet size$, SNR $SNR$.
+
+Code Length $code length$, Info length $info length$
+
+Max Error Frame $max error frame$. Display per $display freq$ frame, save to file per $save freq$ frame.
+
+Result file name: $save file$
+Simulation starts at: 
+@Start time@
+

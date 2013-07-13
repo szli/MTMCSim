@@ -1,0 +1,12 @@
+alphabet size = 16
+code length = 64
+info length = 32
+SNR = 7
+seed  = 50
+lambda = 4
+
+max error frame = 100
+display freq = 10
+save freq = 500
+save file = KVChanSimOut/BPSKTest1Res.txt
+multiple run mode = 0

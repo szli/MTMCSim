@@ -1,0 +1,9 @@
+simulation name = KVChanSim
+workingDir=./
+profile file name=KVChanSim/BPSKTest1.txt  %relative path from working Dir
+temp file name=KVChanSimOut/KVChantempFile.txt %relative path from working Dir
+format file name=KVChanSim/KVChanFormat.txt %relative path from working Dir
+queueSize=8
+nThreads=4
+multiple run mode = 0
+no simulation = 0

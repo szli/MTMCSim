@@ -17,16 +17,16 @@ set(BOOST_USE_STATIC_LIBS OFF)
 
 find_package(Boost 1.47 REQUIRED COMPONENTS thread)
 
+info(Boost_INCLUDE_DIRS)
+info(Boost_FOUND)
+
 
 include_directories (${CMAKE_CURRENT_SOURCE_DIR}/include/ ${BOOST_INCLUDEDIR})
 link_directories( ${BOOST_ROOT}/lib)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
-
 add_executable (MTMCSim ${srcfiles})
-
-#add_library(boost_thread SHARED IMPORTED)
 
 #The ${Boost_THREAD_LIBRARY} has format optimized;filename;debug;filename, we only want file name
 
@@ -51,8 +51,6 @@ info(BOOST_FILES)
 add_custom_command(TARGET MTMCSim
                     POST_BUILD
                     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${BOOST_FILES} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
-
-
 
 target_include_directories( MTMCSim PUBLIC ${BOOST_INCLUDEDIR} )
 target_link_libraries( MTMCSim ${Boost_THREAD_LIBRARY} )
