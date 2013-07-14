@@ -308,6 +308,9 @@ void KVChanSim::KVChanPara::loadPara(const paraMap& para, DispUI& ui)
     if (!getStrPara(para,"save file", saveFN))
         paraMissingWarning(ui,"save file");
 
+    SIM_ASSERT(nbSize > codeLen, "The alphabet size should greater than the code length for Reed-Solomon code");
+    SIM_ASSERT(codeLen > infoLen, "The code length should greater than the information length for Reed-Solomon code");
+
 
 }
 

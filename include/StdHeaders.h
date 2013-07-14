@@ -1,5 +1,7 @@
 #ifndef _STDHEADERS_H_INCLUDED
 #define _STDHEADERS_H_INCLUDED
+
+
 #include <cmath>
 #include <cstdio>
 #include <cstring>
@@ -44,4 +46,20 @@ namespace MTMCSim{
 	const double EPS = 1e-15;// changed from 1e-8 to 1e-15 on Sep 28, 2010
 	const int MAX_VALUE = 1000000000;
 }
+
+
+#define SIM_ERR(err) \
+do {                 \
+  std::ostringstream  err_msg; \
+  err_msg << "Error in: " << endl <<  \
+          "Function: " << __FUNCTION__ << endl << \
+          "File: " << __FILE__ << endl <<  \
+          "Line: " << __LINE__ << endl << \
+          "Message: " << err;   	   \
+  throw std::runtime_error(err_msg.str()); \
+ } while(0) 
+
+#define SIM_ASSERT(cond, msg) if (cond); else SIM_ERR(msg)
+
+
 #endif 

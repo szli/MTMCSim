@@ -52,10 +52,13 @@ elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux" )
 endif()
 
 info(BOOST_FILES)
+# Need to copy DLL file only if on Windows. On Linux, set LD_LIBRARY_PATH
+# Note: Depending on different versions of boost, one may need more libaries, the libs that boost thread depends on
+if ( CMAKE_SYSTEM_NAME STREQUAL "Windows")
 add_custom_command(TARGET MTMCSim
                     POST_BUILD
                     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${BOOST_FILES} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
-
+endif()
 
 
 #target_include_directories( MTMCSim PRIVATE ${Boost_INCLUDE_DIRS} )
