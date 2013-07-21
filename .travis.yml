@@ -5,7 +5,7 @@ before_install:
   - sudo apt-get install libboost-all-dev
 before_script:
     - ./configure-travis.sh
-    - pwd
+    - cd build_travis
 script: make -j 8
 branches:
   only:
