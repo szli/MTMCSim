@@ -13,3 +13,5 @@ notifications:
     - isulsz1@gmail.com
   email:
     on_failure: always
+
+
