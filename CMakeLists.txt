@@ -19,9 +19,9 @@ find_package(Boost REQUIRED COMPONENTS thread)
 
 info(Boost_INCLUDE_DIRS)
 info(Boost_FOUND)
-
+info(Boost_LIBRARY_DIRS)
 include_directories (${CMAKE_CURRENT_SOURCE_DIR}/include/ ${Boost_INCLUDE_DIRS})
-link_directories( ${BOOST_ROOT}/lib)
+link_directories( ${Boost_LIBRARY_DIRS})
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/simulations) # could be bin  
 
