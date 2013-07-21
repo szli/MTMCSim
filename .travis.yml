@@ -1,0 +1,15 @@
+language: cpp
+compiler:
+    - gcc
+before_script:
+    - ./configure-travis.sh
+script: cd build-travis && make -j 8
+branches:
+  only:
+    - master
+
+notifications:
+  receipients:
+    - isulsz1@gmail.com
+  email:
+    on_failure: always
