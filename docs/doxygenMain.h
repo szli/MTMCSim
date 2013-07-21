@@ -2,18 +2,12 @@
 *
 *   \section author Author and contact information
 *   Author: Shizheng Li
-*   This project was done when he was a PhD student at Dept. of Electrical and Computer Engineering, Iowa State University
-*
-*   Contact: szli.code AT gmail
-*   
-*   \section sys System Requirement
-*   The project is portable between Windows and Linux. Tested under Windows 7 32-bit and 64-bit, Visual Studio 2010 and Fedora 13 with Gcc 4.4.
-*   
-*   The project requires Boost library. Tested under 1.43/1.44/1.47 version. Boost::thread must be built on the system. We use CMake as build tool. This allow cross-platform builds. 
-*
-*   To obtain high performance, the hardware should offer good parallel compute capability. Typically the number of working threads equals to 
-*   the number of CPU cores. Tested under Intel Core Duo T8100, Intel Core i7-950, Intel Core2 6400 and Intel Xeon X5650. 
-*
+
+    Contact: szli.code AT gmail
+
+    This project was mostly done when he was a PhD student at Dept. of Electrical and Computer Engineering, Iowa State University. 
+    
+    Most development was done between 2009 and 2010. Revisited in 2013 for a build system rework and making it open source.   
 *     
 *   \section intro Introduction
 *   This project indends to have a generic platform for mulththreaded Monte Carlo simulations. As long as the simulation is written
@@ -32,7 +26,7 @@ in this project are boost::shared_ptr. All containers are from C++ STL.
 This documentation is brief. Only displays public members of each classes and documentations for some of the members. 
 
 \section structure Main Structure
-\subsection core Core Classes
+\subsection core Core Infrastructure Classes
 
 MTMCSim::MTMCScheduler: Multithreading scheduler class. Handles thread creation, synchronization, buffering, etc. 
 
@@ -44,22 +38,52 @@ Factory pattern (MTMCSim::SimuFactory, MTMCSim::SimuParaFactory) is used to prod
 
 The main() function is in RumSimu.cpp.
 
-\subsection simulators Current Implemented Simulators (Mainly for coding theory, for financial engineering applications, see another document)
+\subsection simulators Current Implemented Simulators (Mainly for coding theory)
 MTMCSim::DSCKVSim: Koetter-Vardy algorithm for distributed source coding.
 
-MTMCSim::KVChanSim: Koetter-Vardy algorithm for channel coding.
+MTMCSim::KVChanSim: Koetter-Vardy algorithm for channel coding. This is the simplest use of this simulation program.
 
-MTMCSim::MulStageSim: Multistage LDPC codes for distributed source coding.
+MTMCSim::MulStageSim: Multistage LDPC codes for distributed source coding. Use rate adaptive LDPC codes, designed by David Varodayan et.al. (http://ivms.stanford.edu/~varodayan/ldpca.html)
+
+MTMCSim::MSALSim: Multistage LDPC codes for distributed source coding. Use optimized codes for AWGN channels, designed using PEG algorithm. Not rate adaptive code, but better performance
 
 MTMCSim::MulSourSim: Multisource distributed source coding based LDPC codes for linear equation correlation.
 
-Several classes are defined for each of the specific simulators for their algorithm implementation. Omitted here. 
+The above simulations work in a "FER" mode. We keep simulating frames until we see 100 error frames (configurable), and compute FER. If multi run mode is implemented, we change the code rate and **run new simulations** in order to get close to a code rate that gives FER < 10^-3. The code rate is the "error free" code rate.
+
+For rate adaptive codes, we can also run simulation in a "Rate" mode. In one instance of Monte Carlo simulation, we change the code rate until the decoding is successful. This can be done in practice since the codes are rate-adaptive, just transmit more parity bits. We simulate 100 (configurable) frames and average the code rate, this is the average required code rate to achieve "error free" transmission.
+
+MTMCSim::MulStageSimRate and MTMCSim::MulSourSimRate implements the "Rate" mode.
+
+A simulation that implements MTMCSim::MultiRunSimuBase can run in "multi run" mode. It allows you to change your parameter and run the simulation again, until you set a quit flag to be true. Currently it is used to change the code rate heuristically to find rate that gives FER<10^-3.
 
 For a complete list of class hierarchy, please see <a href="hierarchy.html">Class Hierarchy</a> .
 
+\subsection utils Utilility classes
+Here are some classes and functionarities that may be reused by other research projects.
+
+MTMCSim::pdfXY Joint probablity densigy (mass) function for two non-binary sources. It can be qary symmetric sources, or pdf (pmf more procisely) given by a file. It computes entropy, conditional entropy, mutual information, marginal pdf, etc.
+
+MTMCSim::discrete_distribution Random number generator for 1D general discrete probability distributions. It follows boost::random interface convention. It takes in a vector of double that gives the pmf. The algorithm is "slow start and fast generate". At startup time, it creates two tables for generating RNs, it is a bit slow, but when actual generating discrete random RVs, it is very fast. (So it is different from the "interval look up"). The table can be cached and reused, further reduces the start up time after one distribution is used once.
+
+MTMCSim::nbToBinPDFConv Converts a pmf on alphabet with size nbSize to log_2(nbSize) binary sources with a joint pdf. Also computes conditional entropies and conditional probabilities condition on K number of bits where K between 0 to log_2(nbSize).
+
+MTMCSim::LDPCDec General LDPC decoder using belief-propgation algorithm written by my advisor Aditya Ramamoorthy. It supports ordinary LDPC decoding (find a code word) or decode to syndrome (finding a vector in a coset corresponding to the syndrome), which is useful for distributed source coding.
+
+
+\section sys Build and Environment
+
+The project is portable between Windows and Linux. Tested under Windows 7 32-bit and 64-bit, Visual Studio 2010 and Fedora 13 and Centos 6.3 with Gcc 4.4.
+   
+The project requires Boost library. No strict requirement on versions. Tested under 1.43/1.44/1.47 version. Boost::thread must be built on the system.  Boost shared_ptr is heavily used.
+
+We use CMake as the build tool. This allow cross-platform builds. You can generate Visual Studio solution/project files, or make files, or nmake files, etc.
+
+To obtain high performance, the hardware should offer good parallel compute capability. Typically the number of working threads equals to the number of CPU cores.
+
 *   \section ui User Interface
 
-The user interface is written in a pure OO manner and intended to potentially support  graphic user interface in the future.
+The user interface is written in a pure OO manner and intended to potentially support  GUI or Python in the future.
 \subsection input Input files
 *   The input parameters are given in text files. Typically, there are two input files. One is the top level configuration file,
 *   the file name is MTMCSimconf.txt by default, or is the input paramater of the exetuable file. A typical top configuration file looks like as follows.
@@ -129,7 +153,7 @@ computed results into string using given format.
 *   To write a specified simulation, a simulator class should be derived from  MTMCSim::MTMCSimBase class. See the doc of MTMCSim::MTMCSimBase
 *   for more information. 
 
-A good example of such a simulator  with detailed comments is MTMCSim::MulStageSim.
+A good example of such a simulator  with detailed comments is MTMCSim::KVChanSim and MTMCSim::MulStageSim.
 
 *   
 *   
