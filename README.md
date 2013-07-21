@@ -1,6 +1,10 @@
 MTMCSim
 =======
 
+
+[![Build Status](https://travis-ci.org/szli/MTMCSim.png)](https://travis-ci.org/szli]/MTMCSim)
+
+
 This project is still under development.
 
 Multithreaded Monte Carlo Simulation Engine, designed primarily for coding theory, communications theory
