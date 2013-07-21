@@ -4,12 +4,12 @@ var NAVTREE =
     [ "Multithreaded Monte Carlo Simulation platform. (MTMCSim)", "index.html", [
       [ "Author and contact information", "index.html#author", null ],
       [ "Introduction", "index.html#intro", null ],
+      [ "Build and Environment", "index.html#sys", null ],
       [ "Main Structure", "index.html#structure", [
         [ "Core Infrastructure Classes", "index.html#core", null ],
         [ "Current Implemented Simulators (Mainly for coding theory)", "index.html#simulators", null ],
         [ "Utilility classes", "index.html#utils", null ]
       ] ],
-      [ "Build and Environment", "index.html#sys", null ],
       [ "User Interface", "index.html#ui", [
         [ "Input files", "index.html#input", null ],
         [ "Output files", "index.html#out", null ],
