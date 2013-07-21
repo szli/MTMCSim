@@ -1,0 +1,420 @@
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name DSCKVSim/QARY256_1.txt
+
+Alphabet Size 256, PDF Type #QARY 0.4.
+HX = 8, HY = 8, H(Y|X) = 5.76756.
+
+Code Length 255, Info length 65
+Transmission Rates (bit/symbol) 5.96078
+
+Max Error Frame 100. Display per 10 frame, save to file per 500 frame.
+
+Result file name: DSCKVSim/QARY256Res_Debug.txt
+Simulation starts at: 
+Sun Jul 14 21:29:54 2013
+
+
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name DSCKVSim/QARY256_1.txt
+
+Alphabet Size 256, PDF Type #QARY 0.8.
+HX = 8, HY = 8, H(Y|X) = 2.3208.
+
+Code Length 255, Info length 65
+Transmission Rates (bit/symbol) 5.96078
+
+Max Error Frame 100. Display per 10 frame, save to file per 500 frame.
+
+Result file name: DSCKVSim/QARY256Res_Debug.txt
+Simulation starts at: 
+Sun Jul 14 21:30:36 2013
+
+
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name DSCKVSim/QARY256_1.txt
+
+Alphabet Size 256, PDF Type #QARY 0.8.
+HX = 8, HY = 8, H(Y|X) = 2.3208.
+
+Code Length 255, Info length 30
+Transmission Rates (bit/symbol) 7.05882
+
+Max Error Frame 100. Display per 10 frame, save to file per 500 frame.
+
+Result file name: DSCKVSim/QARY256Res_Debug.txt
+Simulation starts at: 
+Sun Jul 14 21:31:33 2013
+
+
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name DSCKVSim/QARY256_1.txt
+
+Alphabet Size 256, PDF Type #QARY 0.8.
+HX = 8, HY = 8, H(Y|X) = 2.3208.
+
+Code Length 255, Info length 30
+Transmission Rates (bit/symbol) 7.05882
+
+Max Error Frame 100. Display per 10 frame, save to file per 500 frame.
+
+Result file name: DSCKVSim/QARY256Res_Debug.txt
+Simulation starts at: 
+Sun Jul 14 21:41:11 2013
+
+
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name DSCKVSim/QARY256_1.txt
+
+Alphabet Size 256, PDF Type #QARY 0.8.
+HX = 8, HY = 8, H(Y|X) = 2.3208.
+
+Code Length 255, Info length 30
+Transmission Rates (bit/symbol) 7.05882
+
+Max Error Frame 100. Display per 10 frame, save to file per 500 frame.
+
+Result file name: DSCKVSim/QARY256Res_Debug.txt
+Simulation starts at: 
+Sun Jul 14 21:42:27 2013
+
+
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name DSCKVSim/QARY256_1.txt
+
+Alphabet Size 256, PDF Type #QARY 0.8.
+HX = 8, HY = 8, H(Y|X) = 2.3208.
+
+Code Length 255, Info length 30
+Transmission Rates (bit/symbol) 7.05882
+
+Max Error Frame 100. Display per 10 frame, save to file per 500 frame.
+
+Result file name: DSCKVSim/QARY256Res_Debug.txt
+Simulation starts at: 
+Sun Jul 14 21:43:04 2013
+
+
+Frame: 500 Err Fr: 0 FER: 0
+Frame: 1000 Err Fr: 0 FER: 0
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name DSCKVSim/QARY256_1.txt
+
+Alphabet Size 256, PDF Type #QARY 0.8.
+HX = 8, HY = 8, H(Y|X) = 2.3208.
+
+Code Length 255, Info length 132
+Transmission Rates (bit/symbol) 3.85882
+
+Max Error Frame 100. Display per 10 frame, save to file per 500 frame.
+
+Result file name: DSCKVSim/QARY256Res_Debug.txt
+Simulation starts at: 
+Sun Jul 14 21:46:11 2013
+
+
+Frame: 500 Err Fr: 1 FER: 0.002
+Frame: 1000 Err Fr: 1 FER: 0.001
+Frame: 1500 Err Fr: 3 FER: 0.002
+Frame: 2000 Err Fr: 5 FER: 0.0025
+Frame: 2500 Err Fr: 5 FER: 0.002
+Frame: 3000 Err Fr: 5 FER: 0.00166667
+Frame: 3500 Err Fr: 6 FER: 0.00171429
+Frame: 4000 Err Fr: 6 FER: 0.0015
+Frame: 4500 Err Fr: 6 FER: 0.00133333
+Frame: 5000 Err Fr: 7 FER: 0.0014
+Frame: 5500 Err Fr: 7 FER: 0.00127273
+Frame: 6000 Err Fr: 7 FER: 0.00116667
+Frame: 6500 Err Fr: 8 FER: 0.00123077
+Frame: 7000 Err Fr: 8 FER: 0.00114286
+Frame: 7500 Err Fr: 8 FER: 0.00106667
+Frame: 8000 Err Fr: 8 FER: 0.001
+Frame: 8500 Err Fr: 10 FER: 0.00117647
+Frame: 9000 Err Fr: 10 FER: 0.00111111
+Frame: 9500 Err Fr: 10 FER: 0.00105263
+Frame: 10000 Err Fr: 10 FER: 0.001
+Frame: 10500 Err Fr: 10 FER: 0.000952381
+Frame: 11000 Err Fr: 12 FER: 0.00109091
+Frame: 11500 Err Fr: 14 FER: 0.00121739
+Frame: 12000 Err Fr: 14 FER: 0.00116667
+Frame: 12500 Err Fr: 18 FER: 0.00144
+Frame: 13000 Err Fr: 18 FER: 0.00138462
+Frame: 13500 Err Fr: 18 FER: 0.00133333
+Frame: 14000 Err Fr: 19 FER: 0.00135714
+Frame: 14500 Err Fr: 19 FER: 0.00131034
+Frame: 15000 Err Fr: 20 FER: 0.00133333
+Frame: 15500 Err Fr: 21 FER: 0.00135484
+Frame: 16000 Err Fr: 22 FER: 0.001375
+Frame: 16500 Err Fr: 22 FER: 0.00133333
+Frame: 17000 Err Fr: 22 FER: 0.00129412
+Frame: 17500 Err Fr: 22 FER: 0.00125714
+Frame: 18000 Err Fr: 23 FER: 0.00127778
+Frame: 18500 Err Fr: 23 FER: 0.00124324
+Frame: 19000 Err Fr: 23 FER: 0.00121053
+Frame: 19500 Err Fr: 23 FER: 0.00117949
+Frame: 20000 Err Fr: 23 FER: 0.00115
+Frame: 20500 Err Fr: 24 FER: 0.00117073
+Frame: 21000 Err Fr: 24 FER: 0.00114286
+Frame: 21500 Err Fr: 25 FER: 0.00116279
+Frame: 22000 Err Fr: 26 FER: 0.00118182
+Frame: 22500 Err Fr: 27 FER: 0.0012
+Frame: 23000 Err Fr: 28 FER: 0.00121739
+Frame: 23500 Err Fr: 28 FER: 0.00119149
+Frame: 24000 Err Fr: 29 FER: 0.00120833
+Frame: 24500 Err Fr: 29 FER: 0.00118367
+Frame: 25000 Err Fr: 30 FER: 0.0012
+Frame: 25500 Err Fr: 30 FER: 0.00117647
+Frame: 26000 Err Fr: 30 FER: 0.00115385
+Frame: 26500 Err Fr: 31 FER: 0.00116981
+Frame: 27000 Err Fr: 32 FER: 0.00118519
+Frame: 27500 Err Fr: 34 FER: 0.00123636
+Frame: 28000 Err Fr: 34 FER: 0.00121429
+Frame: 28500 Err Fr: 34 FER: 0.00119298
+Frame: 29000 Err Fr: 34 FER: 0.00117241
+Frame: 29500 Err Fr: 35 FER: 0.00118644
+Frame: 30000 Err Fr: 35 FER: 0.00116667
+Frame: 30500 Err Fr: 36 FER: 0.00118033
+Frame: 31000 Err Fr: 36 FER: 0.00116129
+Frame: 31500 Err Fr: 37 FER: 0.0011746
+Frame: 32000 Err Fr: 37 FER: 0.00115625
+Frame: 32500 Err Fr: 39 FER: 0.0012
+Frame: 33000 Err Fr: 39 FER: 0.00118182
+Frame: 33500 Err Fr: 40 FER: 0.00119403
+Frame: 34000 Err Fr: 40 FER: 0.00117647
+Frame: 34500 Err Fr: 41 FER: 0.00118841
+Frame: 35000 Err Fr: 42 FER: 0.0012
+Frame: 35500 Err Fr: 44 FER: 0.00123944
+Frame: 36000 Err Fr: 44 FER: 0.00122222
+Frame: 36500 Err Fr: 44 FER: 0.00120548
+Frame: 37000 Err Fr: 44 FER: 0.00118919
+Frame: 37500 Err Fr: 45 FER: 0.0012
+Frame: 38000 Err Fr: 45 FER: 0.00118421
+Frame: 38500 Err Fr: 45 FER: 0.00116883
+Frame: 39000 Err Fr: 46 FER: 0.00117949
+Frame: 39500 Err Fr: 47 FER: 0.00118987
+Frame: 40000 Err Fr: 48 FER: 0.0012
+Frame: 40500 Err Fr: 48 FER: 0.00118519
+Frame: 41000 Err Fr: 49 FER: 0.00119512
+Frame: 41500 Err Fr: 49 FER: 0.00118072
+Frame: 42000 Err Fr: 49 FER: 0.00116667
+Frame: 42500 Err Fr: 49 FER: 0.00115294
+Frame: 43000 Err Fr: 50 FER: 0.00116279
+Frame: 43500 Err Fr: 50 FER: 0.00114943
+Frame: 44000 Err Fr: 50 FER: 0.00113636
+Frame: 44500 Err Fr: 50 FER: 0.0011236
+Frame: 45000 Err Fr: 50 FER: 0.00111111
+Frame: 45500 Err Fr: 50 FER: 0.0010989
+Frame: 46000 Err Fr: 50 FER: 0.00108696
+Frame: 46500 Err Fr: 50 FER: 0.00107527
+Frame: 47000 Err Fr: 50 FER: 0.00106383
+Frame: 47500 Err Fr: 53 FER: 0.00111579
+Frame: 48000 Err Fr: 55 FER: 0.00114583
+Frame: 48500 Err Fr: 56 FER: 0.00115464
+Frame: 49000 Err Fr: 57 FER: 0.00116327
+Frame: 49500 Err Fr: 57 FER: 0.00115152
+Frame: 50000 Err Fr: 57 FER: 0.00114
+Frame: 50500 Err Fr: 57 FER: 0.00112871
+Frame: 51000 Err Fr: 57 FER: 0.00111765
+Frame: 51500 Err Fr: 57 FER: 0.0011068
+Frame: 52000 Err Fr: 57 FER: 0.00109615
+Frame: 52500 Err Fr: 58 FER: 0.00110476
+Frame: 53000 Err Fr: 59 FER: 0.00111321
+Frame: 53500 Err Fr: 61 FER: 0.00114019
+Frame: 54000 Err Fr: 62 FER: 0.00114815
+Frame: 54500 Err Fr: 62 FER: 0.00113761
+Frame: 55000 Err Fr: 62 FER: 0.00112727
+Frame: 55500 Err Fr: 62 FER: 0.00111712
+Frame: 56000 Err Fr: 63 FER: 0.001125
+Frame: 56500 Err Fr: 63 FER: 0.00111504
+Frame: 57000 Err Fr: 63 FER: 0.00110526
+Frame: 57500 Err Fr: 63 FER: 0.00109565
+Frame: 58000 Err Fr: 64 FER: 0.00110345
+Frame: 58500 Err Fr: 65 FER: 0.00111111
+Frame: 59000 Err Fr: 65 FER: 0.00110169
+Frame: 59500 Err Fr: 65 FER: 0.00109244
+Frame: 60000 Err Fr: 65 FER: 0.00108333
+Frame: 60500 Err Fr: 65 FER: 0.00107438
+Frame: 61000 Err Fr: 65 FER: 0.00106557
+Frame: 61500 Err Fr: 66 FER: 0.00107317
+Frame: 62000 Err Fr: 67 FER: 0.00108065
+Frame: 62500 Err Fr: 67 FER: 0.001072
+Frame: 63000 Err Fr: 67 FER: 0.00106349
+Frame: 63500 Err Fr: 68 FER: 0.00107087
+Frame: 64000 Err Fr: 69 FER: 0.00107813
+Frame: 64500 Err Fr: 70 FER: 0.00108527
+Frame: 65000 Err Fr: 71 FER: 0.00109231
+Frame: 65500 Err Fr: 71 FER: 0.00108397
+Frame: 66000 Err Fr: 71 FER: 0.00107576
+Frame: 66500 Err Fr: 71 FER: 0.00106767
+Frame: 67000 Err Fr: 71 FER: 0.0010597
+Frame: 67500 Err Fr: 71 FER: 0.00105185
+Frame: 68000 Err Fr: 71 FER: 0.00104412
+Frame: 68500 Err Fr: 72 FER: 0.00105109
+Frame: 69000 Err Fr: 72 FER: 0.00104348
+Frame: 69500 Err Fr: 74 FER: 0.00106475
+Frame: 70000 Err Fr: 74 FER: 0.00105714
+Frame: 70500 Err Fr: 74 FER: 0.00104965
+Frame: 71000 Err Fr: 75 FER: 0.00105634
+Frame: 71500 Err Fr: 76 FER: 0.00106294
+Frame: 72000 Err Fr: 76 FER: 0.00105556
+Frame: 72500 Err Fr: 76 FER: 0.00104828
+Frame: 73000 Err Fr: 78 FER: 0.00106849
+Frame: 73500 Err Fr: 79 FER: 0.00107483
+Frame: 74000 Err Fr: 79 FER: 0.00106757
+Frame: 74500 Err Fr: 80 FER: 0.00107383
+Frame: 75000 Err Fr: 80 FER: 0.00106667
+Frame: 75500 Err Fr: 80 FER: 0.0010596
+Frame: 76000 Err Fr: 80 FER: 0.00105263
+Frame: 76500 Err Fr: 80 FER: 0.00104575
+Frame: 77000 Err Fr: 80 FER: 0.00103896
+Frame: 77500 Err Fr: 80 FER: 0.00103226
+Frame: 78000 Err Fr: 80 FER: 0.00102564
+Frame: 78500 Err Fr: 80 FER: 0.00101911
+Frame: 79000 Err Fr: 80 FER: 0.00101266
+Frame: 79500 Err Fr: 80 FER: 0.00100629
+Frame: 80000 Err Fr: 80 FER: 0.001
+Frame: 80500 Err Fr: 81 FER: 0.00100621
+Frame: 81000 Err Fr: 82 FER: 0.00101235
+Frame: 81500 Err Fr: 83 FER: 0.0010184
+Frame: 82000 Err Fr: 84 FER: 0.00102439
+Frame: 82500 Err Fr: 84 FER: 0.00101818
+Frame: 83000 Err Fr: 84 FER: 0.00101205
+Frame: 83500 Err Fr: 84 FER: 0.00100599
+Frame: 84000 Err Fr: 84 FER: 0.001
+Frame: 84500 Err Fr: 84 FER: 0.000994083
+Frame: 85000 Err Fr: 85 FER: 0.001
+Frame: 85500 Err Fr: 85 FER: 0.000994152
+Frame: 86000 Err Fr: 85 FER: 0.000988372
+Frame: 86500 Err Fr: 86 FER: 0.00099422
+Frame: 87000 Err Fr: 86 FER: 0.000988506
+Frame: 87500 Err Fr: 86 FER: 0.000982857
+Frame: 88000 Err Fr: 88 FER: 0.001
+Frame: 88500 Err Fr: 88 FER: 0.00099435
+Frame: 89000 Err Fr: 89 FER: 0.001
+Frame: 89500 Err Fr: 89 FER: 0.000994413
+Frame: 90000 Err Fr: 89 FER: 0.000988889
+Frame: 90500 Err Fr: 89 FER: 0.000983425
+Frame: 91000 Err Fr: 90 FER: 0.000989011
+Frame: 91500 Err Fr: 90 FER: 0.000983607
+Frame: 92000 Err Fr: 90 FER: 0.000978261
+Frame: 92500 Err Fr: 90 FER: 0.000972973
+Frame: 93000 Err Fr: 90 FER: 0.000967742
+Frame: 93500 Err Fr: 90 FER: 0.000962567
+Frame: 94000 Err Fr: 91 FER: 0.000968085
+Frame: 94500 Err Fr: 91 FER: 0.000962963
+Frame: 95000 Err Fr: 91 FER: 0.000957895
+Frame: 95500 Err Fr: 91 FER: 0.00095288
+Frame: 96000 Err Fr: 93 FER: 0.00096875
+Frame: 96500 Err Fr: 94 FER: 0.000974093
+Frame: 97000 Err Fr: 94 FER: 0.000969072
+Frame: 97500 Err Fr: 94 FER: 0.000964103
+Frame: 98000 Err Fr: 95 FER: 0.000969388
+Frame: 98500 Err Fr: 95 FER: 0.000964467
+Frame: 99000 Err Fr: 96 FER: 0.000969697
+Frame: 99500 Err Fr: 97 FER: 0.000974874
+Frame: 100000 Err Fr: 98 FER: 0.00098
+Frame: 100500 Err Fr: 99 FER: 0.000985075
+Frame: 101000 Err Fr: 99 FER: 0.000980198
+Frame: 101500 Err Fr: 99 FER: 0.000975369
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name DSCKVSim/QARY256_1.txt
+
+Alphabet Size 256, PDF Type #QARY 0.8.
+HX = 8, HY = 8, H(Y|X) = 2.3208.
+
+Code Length 255, Info length 132
+Transmission Rates (bit/symbol) 3.85882
+
+Max Error Frame 100. Display per 10 frame, save to file per 500 frame.
+
+Result file name: DSCKVSim/QARY256Res_Debug.txt
+Simulation starts at: 
+Sun Jul 14 22:12:37 2013
+
+
+Frame: 500 Err Fr: 1 FER: 0.002
+Frame: 1000 Err Fr: 1 FER: 0.001
+Frame: 1500 Err Fr: 3 FER: 0.002
+Frame: 2000 Err Fr: 5 FER: 0.0025
+Frame: 2500 Err Fr: 5 FER: 0.002
+Frame: 3000 Err Fr: 5 FER: 0.00166667
+Frame: 3500 Err Fr: 6 FER: 0.00171429
+Frame: 4000 Err Fr: 6 FER: 0.0015
+Frame: 4500 Err Fr: 6 FER: 0.00133333
+Frame: 5000 Err Fr: 7 FER: 0.0014
+Frame: 5500 Err Fr: 7 FER: 0.00127273
+Frame: 6000 Err Fr: 7 FER: 0.00116667
+Frame: 6500 Err Fr: 8 FER: 0.00123077
+Frame: 7000 Err Fr: 8 FER: 0.00114286
+Frame: 7500 Err Fr: 8 FER: 0.00106667
+Frame: 8000 Err Fr: 8 FER: 0.001
+Frame: 8500 Err Fr: 10 FER: 0.00117647
+Frame: 9000 Err Fr: 10 FER: 0.00111111
+Frame: 9500 Err Fr: 10 FER: 0.00105263
+Frame: 10000 Err Fr: 10 FER: 0.001
+Frame: 10500 Err Fr: 10 FER: 0.000952381
+Frame: 11000 Err Fr: 12 FER: 0.00109091
+Frame: 11500 Err Fr: 14 FER: 0.00121739
+Frame: 12000 Err Fr: 14 FER: 0.00116667
+Frame: 12500 Err Fr: 18 FER: 0.00144
+Frame: 13000 Err Fr: 18 FER: 0.00138462
+Frame: 13500 Err Fr: 18 FER: 0.00133333
+Frame: 14000 Err Fr: 19 FER: 0.00135714
+Frame: 14500 Err Fr: 19 FER: 0.00131034
+Frame: 15000 Err Fr: 20 FER: 0.00133333
+Frame: 15500 Err Fr: 21 FER: 0.00135484
+Frame: 16000 Err Fr: 22 FER: 0.001375
+Frame: 16500 Err Fr: 22 FER: 0.00133333
+Frame: 17000 Err Fr: 22 FER: 0.00129412
+Frame: 17500 Err Fr: 22 FER: 0.00125714
+Frame: 18000 Err Fr: 23 FER: 0.00127778
+Frame: 18500 Err Fr: 23 FER: 0.00124324
+Frame: 19000 Err Fr: 23 FER: 0.00121053
+Frame: 19500 Err Fr: 23 FER: 0.00117949
+Frame: 20000 Err Fr: 23 FER: 0.00115
+Frame: 20500 Err Fr: 24 FER: 0.00117073
+Frame: 21000 Err Fr: 24 FER: 0.00114286
+Frame: 21500 Err Fr: 25 FER: 0.00116279
+Frame: 22000 Err Fr: 26 FER: 0.00118182
+Frame: 22500 Err Fr: 27 FER: 0.0012
+Frame: 23000 Err Fr: 28 FER: 0.00121739
+Frame: 23500 Err Fr: 28 FER: 0.00119149
+Frame: 24000 Err Fr: 29 FER: 0.00120833
+Frame: 24500 Err Fr: 29 FER: 0.00118367
+Frame: 25000 Err Fr: 30 FER: 0.0012
+Frame: 25500 Err Fr: 30 FER: 0.00117647
+Frame: 26000 Err Fr: 30 FER: 0.00115385
+Frame: 26500 Err Fr: 31 FER: 0.00116981
+Frame: 27000 Err Fr: 32 FER: 0.00118519
+Frame: 27500 Err Fr: 34 FER: 0.00123636
+Frame: 28000 Err Fr: 34 FER: 0.00121429
+Frame: 28500 Err Fr: 34 FER: 0.00119298
+Frame: 29000 Err Fr: 34 FER: 0.00117241
+Frame: 29500 Err Fr: 35 FER: 0.00118644
+Frame: 30000 Err Fr: 35 FER: 0.00116667
+Frame: 30500 Err Fr: 36 FER: 0.00118033
+Frame: 31000 Err Fr: 36 FER: 0.00116129
+Frame: 31500 Err Fr: 37 FER: 0.0011746
+Frame: 32000 Err Fr: 37 FER: 0.00115625
+Frame: 32500 Err Fr: 39 FER: 0.0012
+Frame: 33000 Err Fr: 39 FER: 0.00118182
+Frame: 33500 Err Fr: 40 FER: 0.00119403
+Frame: 34000 Err Fr: 40 FER: 0.00117647
+Frame: 34500 Err Fr: 41 FER: 0.00118841
+Frame: 35000 Err Fr: 42 FER: 0.0012
+Frame: 35500 Err Fr: 44 FER: 0.00123944
+Frame: 36000 Err Fr: 44 FER: 0.00122222
+Frame: 36500 Err Fr: 44 FER: 0.00120548
+Frame: 37000 Err Fr: 44 FER: 0.00118919
+Frame: 37500 Err Fr: 45 FER: 0.0012
+Frame: 38000 Err Fr: 45 FER: 0.00118421
+Frame: 38500 Err Fr: 45 FER: 0.00116883
+Frame: 39000 Err Fr: 46 FER: 0.00117949
+Frame: 39500 Err Fr: 47 FER: 0.00118987
+Frame: 40000 Err Fr: 48 FER: 0.0012
+Frame: 40500 Err Fr: 48 FER: 0.00118519
+Frame: 41000 Err Fr: 49 FER: 0.00119512
+Frame: 41500 Err Fr: 49 FER: 0.00118072
+Frame: 42000 Err Fr: 49 FER: 0.00116667
+Frame: 42500 Err Fr: 49 FER: 0.00115294
+
+FER >= 0.0011. Quit

@@ -1,0 +1,9 @@
+simulation name = DSCKVSim
+workingDir=./
+profile file name=DSCKVSim/QARY256_1.txt  %relative path from working Dir
+temp file name=DSCKVSim/DSCKVtempFile.txt %relative path from working Dir
+format file name=DSCKVSim/DSCKVFormat.txt %relative path from working Dir
+queueSize=8
+nThreads=2
+multiple run mode = 0
+no simulation = 0

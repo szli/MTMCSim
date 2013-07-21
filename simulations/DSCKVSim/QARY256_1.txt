@@ -1,0 +1,16 @@
+QARY symmetric
+
+alphabet size = 256
+code length = 255
+info length = 132
+pdf para = #QARY 0.8
+seed  = 50
+lambda = 100.99
+algorithm mode=KVDSC
+
+max error frame = 100
+display freq = 10
+save freq = 500
+save file = DSCKVSimOut/QARY256Res_Debug.txt
+multiple run mode = 0
+

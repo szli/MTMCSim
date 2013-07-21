@@ -1,0 +1,15 @@
+************* DSC KV simulator ********** by Shizheng Li
+Parameters: Profile name @profile file name@
+
+Alphabet Size $alphabet size$, PDF Type $pdf para$.
+HX = @HX@, HY = @HY@, H(Y|X) = @HYX@.
+
+Code Length $code length$, Info length @info length@
+Transmission Rates (bit/symbol) @Tx Rate@
+
+Max Error Frame $max error frame$. Display per $display freq$ frame, save to file per $save freq$ frame.
+
+Result file name: $save file$
+Simulation starts at: 
+@Start time@
+
