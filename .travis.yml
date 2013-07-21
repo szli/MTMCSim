@@ -1,9 +1,12 @@
 language: cpp
 compiler:
     - gcc
+before_install:
+  - sudo apt-get install libboost-all-dev
 before_script:
     - ./configure-travis.sh
-script: cd build-travis && make -j 8
+    - pwd
+script: make -j 8
 branches:
   only:
     - master
