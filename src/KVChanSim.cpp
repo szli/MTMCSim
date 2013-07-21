@@ -101,7 +101,6 @@ void KVChanSim::oneStep(const std::vector<int> &xSeq,const vector<double>& normR
         }
         */
 
-    //For Hemitian code 
     int g = (int)(sqrt((double)nbSize)*(sqrt((double)nbSize)-1) / 2);
     cost = KVMul(ws.reliMat, ws.MulMat, (int)para.lambda, 1, infoLen-1 + g );
     score = 0;
@@ -112,7 +111,7 @@ void KVChanSim::oneStep(const std::vector<int> &xSeq,const vector<double>& normR
 
 }
 
-// For Hemitian Code
+// For Hemitian Code, not used for now
 int KVChanSim::HemitianLB(int cost)
 {
     int g = (int)(sqrt((double)nbSize)*(sqrt((double)nbSize)-1) / 2);
@@ -266,18 +265,7 @@ shared_ptr<RNObj> KVChanSim::genRNObj()
         R = sqrt(-2*log(uni01Gen(uniGen)));
         U2 = uni01Gen(uniGen);
         pseq->normRV[codeLen*nBits-1] = R*cos(2*3.1415926535897932 * U2);
-    }
-
-
-        
-
-
-    //cout << uni01Gen(uniGen);
-    /*for (int i = 0; i<codeLen*nBits; i++)
-    {
-        pseq->normRV[i] = normGen(uniGen);
-        
-    }*/
+    }         
 
     return pseq;
 }
