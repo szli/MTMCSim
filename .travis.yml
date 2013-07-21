@@ -4,9 +4,11 @@ compiler:
 before_install:
   - sudo apt-get install libboost-all-dev
 before_script:
-    - ./configure-travis.sh
-    - cd build_travis
-script: make -j 8
+  - mkdir build_travis
+  - cd build_travis
+  - cmake -DCMAKE_BUILD_TYPE=Debug ../
+  
+script: make -j 8 VERBOSE=1
 branches:
   only:
     - master
