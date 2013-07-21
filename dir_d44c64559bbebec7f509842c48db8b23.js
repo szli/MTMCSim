@@ -125,6 +125,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "SimuFactory.h", "_simu_factory_8h.html", [
       [ "SimuFactory", "class_m_t_m_c_sim_1_1_simu_factory.html", "class_m_t_m_c_sim_1_1_simu_factory" ]
     ] ],
+    [ "SimuIface.hpp", "_simu_iface_8hpp.html", null ],
     [ "SimuItemCreator.h", "_simu_item_creator_8h.html", [
       [ "SimuItemCreator", "class_m_t_m_c_sim_1_1_simu_item_creator.html", "class_m_t_m_c_sim_1_1_simu_item_creator" ]
     ] ],

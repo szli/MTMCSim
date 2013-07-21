@@ -1,6 +1,7 @@
 <map id="F:/GitHub/MTMCSim/include/TextFileInput.h" name="F:/GitHub/MTMCSim/include/TextFileInput.h">
-<area shape="rect" id="node2" href="$_mul_sour_sim_test_8cpp.html" title="F:/GitHub/MTMCSim/src\l/MulSourSimTest.cpp" alt="" coords="5,97,165,138"/>
-<area shape="rect" id="node3" href="$_run_d_s_c_k_v_8cpp.html" title="F:/GitHub/MTMCSim/src\l/RunDSCKV.cpp" alt="" coords="190,97,351,138"/>
-<area shape="rect" id="node4" href="$_run_simu_8cpp.html" title="F:/GitHub/MTMCSim/src\l/RunSimu.cpp" alt="" coords="375,97,536,138"/>
-<area shape="rect" id="node5" href="$_text_file_input_8cpp.html" title="F:/GitHub/MTMCSim/src\l/TextFileInput.cpp" alt="" coords="561,97,721,138"/>
+<area shape="rect" id="node2" href="$_simu_iface_8hpp.html" title="F:/GitHub/MTMCSim/include\l/SimuIface.hpp" alt="" coords="5,97,189,138"/>
+<area shape="rect" id="node3" href="$_mul_sour_sim_test_8cpp.html" title="F:/GitHub/MTMCSim/src\l/MulSourSimTest.cpp" alt="" coords="214,97,375,138"/>
+<area shape="rect" id="node4" href="$_run_d_s_c_k_v_8cpp.html" title="F:/GitHub/MTMCSim/src\l/RunDSCKV.cpp" alt="" coords="399,97,560,138"/>
+<area shape="rect" id="node5" href="$_run_simu_8cpp.html" title="F:/GitHub/MTMCSim/src\l/RunSimu.cpp" alt="" coords="585,97,745,138"/>
+<area shape="rect" id="node6" href="$_text_file_input_8cpp.html" title="F:/GitHub/MTMCSim/src\l/TextFileInput.cpp" alt="" coords="770,97,931,138"/>
 </map>

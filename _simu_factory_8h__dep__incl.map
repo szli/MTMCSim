@@ -1,6 +1,7 @@
 <map id="F:/GitHub/MTMCSim/include/SimuFactory.h" name="F:/GitHub/MTMCSim/include/SimuFactory.h">
-<area shape="rect" id="node2" href="$_simu_item_creator_8h.html" title="F:/GitHub/MTMCSim/include\l/SimuItemCreator.h" alt="" coords="5,97,189,138"/>
-<area shape="rect" id="node4" href="$_run_simu_8cpp.html" title="F:/GitHub/MTMCSim/src\l/RunSimu.cpp" alt="" coords="214,97,375,138"/>
-<area shape="rect" id="node5" href="$_simu_factory_8cpp.html" title="F:/GitHub/MTMCSim/src\l/SimuFactory.cpp" alt="" coords="399,97,560,138"/>
-<area shape="rect" id="node3" href="$_reg_simu_8cpp.html" title="F:/GitHub/MTMCSim/src\l/RegSimu.cpp" alt="" coords="17,187,177,229"/>
+<area shape="rect" id="node2" href="$_simu_iface_8hpp.html" title="F:/GitHub/MTMCSim/include\l/SimuIface.hpp" alt="" coords="5,97,189,138"/>
+<area shape="rect" id="node3" href="$_simu_item_creator_8h.html" title="F:/GitHub/MTMCSim/include\l/SimuItemCreator.h" alt="" coords="213,97,397,138"/>
+<area shape="rect" id="node5" href="$_run_simu_8cpp.html" title="F:/GitHub/MTMCSim/src\l/RunSimu.cpp" alt="" coords="422,97,583,138"/>
+<area shape="rect" id="node6" href="$_simu_factory_8cpp.html" title="F:/GitHub/MTMCSim/src\l/SimuFactory.cpp" alt="" coords="607,97,768,138"/>
+<area shape="rect" id="node4" href="$_reg_simu_8cpp.html" title="F:/GitHub/MTMCSim/src\l/RegSimu.cpp" alt="" coords="225,187,385,229"/>
 </map>

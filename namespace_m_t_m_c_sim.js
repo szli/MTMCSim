@@ -11,6 +11,7 @@ var namespace_m_t_m_c_sim =
     [ "DSCKVSim", "class_m_t_m_c_sim_1_1_d_s_c_k_v_sim.html", "class_m_t_m_c_sim_1_1_d_s_c_k_v_sim" ],
     [ "DSCKVSimRate", "class_m_t_m_c_sim_1_1_d_s_c_k_v_sim_rate.html", "class_m_t_m_c_sim_1_1_d_s_c_k_v_sim_rate" ],
     [ "KVChanSim", "class_m_t_m_c_sim_1_1_k_v_chan_sim.html", "class_m_t_m_c_sim_1_1_k_v_chan_sim" ],
+    [ "LDPCDec", "class_m_t_m_c_sim_1_1_l_d_p_c_dec.html", "class_m_t_m_c_sim_1_1_l_d_p_c_dec" ],
     [ "MCThreadInfo", "struct_m_t_m_c_sim_1_1_m_c_thread_info.html", "struct_m_t_m_c_sim_1_1_m_c_thread_info" ],
     [ "MRSimuFactory", "class_m_t_m_c_sim_1_1_m_r_simu_factory.html", "class_m_t_m_c_sim_1_1_m_r_simu_factory" ],
     [ "MRSimuItemCreator", "class_m_t_m_c_sim_1_1_m_r_simu_item_creator.html", "class_m_t_m_c_sim_1_1_m_r_simu_item_creator" ],

@@ -3,12 +3,13 @@ var NAVTREE =
   [ "MTMCSim", "index.html", [
     [ "Multithreaded Monte Carlo Simulation platform. (MTMCSim)", "index.html", [
       [ "Author and contact information", "index.html#author", null ],
-      [ "System Requirement", "index.html#sys", null ],
       [ "Introduction", "index.html#intro", null ],
       [ "Main Structure", "index.html#structure", [
-        [ "Core Classes", "index.html#core", null ],
-        [ "Current Implemented Simulators (Mainly for coding theory, for financial engineering applications, see another document)", "index.html#simulators", null ]
+        [ "Core Infrastructure Classes", "index.html#core", null ],
+        [ "Current Implemented Simulators (Mainly for coding theory)", "index.html#simulators", null ],
+        [ "Utilility classes", "index.html#utils", null ]
       ] ],
+      [ "Build and Environment", "index.html#sys", null ],
       [ "User Interface", "index.html#ui", [
         [ "Input files", "index.html#input", null ],
         [ "Output files", "index.html#out", null ],
@@ -52,9 +53,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_make_files_22_88_811_82_2_compiler_id_c_2_c_make_c_compiler_id_8c.html",
-"class_m_t_m_c_sim_1_1_d_s_c_k_v_sim_1_1_d_s_c_k_v_comp_res.html#acb335ad3c0e4f24deb0c76414ba2566e",
-"class_m_t_m_c_sim_1_1_mul_sour_sim_1_1_mul_sour_comp_res.html#a90ccb89a91ebed00ccfbd292f98a980f",
-"class_m_t_m_c_sim_1_1_simu_para_item_creator.html"
+"class_m_t_m_c_sim_1_1_d_s_c_k_v_sim_1_1_x_y_seq.html",
+"class_m_t_m_c_sim_1_1_mul_sour_sim_1_1_mul_sour_comp_res.html#a334eec6a0a8eaecaef9703ffec99b4cb",
+"class_m_t_m_c_sim_1_1_simu_para_factory.html#a0a7f68b67cd7a92670f76b4d9339a5fe"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

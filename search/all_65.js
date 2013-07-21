@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['edge_5fllrs_5fcols',['edge_llrs_cols',['../class_l_d_p_c_dec.html#a00880b21052da69694331a48de8636dc',1,'LDPCDec']]],
-  ['edge_5fllrs_5frows',['edge_llrs_rows',['../class_l_d_p_c_dec.html#ad1cb3f142ffa3a504e679b8b97de807d',1,'LDPCDec']]],
+  ['edge_5fllrs_5fcols',['edge_llrs_cols',['../class_m_t_m_c_sim_1_1_l_d_p_c_dec.html#aae1f584dbeed659407296ede735e9983',1,'MTMCSim::LDPCDec']]],
+  ['edge_5fllrs_5frows',['edge_llrs_rows',['../class_m_t_m_c_sim_1_1_l_d_p_c_dec.html#a4fa2e30cc3e798563cb31426cfab67c0',1,'MTMCSim::LDPCDec']]],
   ['encodeone',['encodeOne',['../class_m_t_m_c_sim_1_1_d_l_d_p_c_en_dec.html#afb25e5864adf6bb26a96390505039fc9',1,'MTMCSim::DLDPCEnDec']]],
   ['encsyns',['encSyns',['../class_m_t_m_c_sim_1_1_m_s_a_l_sim_1_1_thread_work_space.html#af538a4f0b8f04349b0d2ff4dac3974ae',1,'MTMCSim::MSALSim::ThreadWorkSpace::encSyns()'],['../class_m_t_m_c_sim_1_1_mul_stage_sim_1_1_thread_work_space.html#a150a635c2832d13696ffcf64107af7f1',1,'MTMCSim::MulStageSim::ThreadWorkSpace::encSyns()'],['../class_m_t_m_c_sim_1_1_mul_stage_sim_rate_1_1_thread_work_space.html#aeff6acc5bf3f0bfc8fa0babb369b3f2f',1,'MTMCSim::MulStageSimRate::ThreadWorkSpace::encSyns()']]],
   ['entstr',['EntStr',['../class_m_t_m_c_sim_1_1_mul_sour_sim_1_1_mul_sour_comp_res.html#a3339bef5e05ce90cf30d77baa385756a',1,'MTMCSim::MulSourSim::MulSourCompRes::EntStr()'],['../class_m_t_m_c_sim_1_1_mul_sour_sim_rate_1_1_mul_sour_comp_res.html#aa2965944072b64cf424d34e2fab607ba',1,'MTMCSim::MulSourSimRate::MulSourCompRes::EntStr()']]],

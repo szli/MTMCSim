@@ -1,6 +1,6 @@
 var searchData=
 [
   ['fer',['FER',['../class_m_t_m_c_sim_1_1_d_s_c_k_v_sim_1_1_d_s_c_k_v_simu_res.html#a3a4bdf301a4b6acf31e17d92e84da723',1,'MTMCSim::DSCKVSim::DSCKVSimuRes::FER()'],['../class_m_t_m_c_sim_1_1_k_v_chan_sim_1_1_k_v_chan_simu_res.html#a2f376363f83ca6d7a60b6f3bbdd68d8e',1,'MTMCSim::KVChanSim::KVChanSimuRes::FER()'],['../class_m_t_m_c_sim_1_1_m_s_a_l_sim_1_1_m_s_a_l_simu_res.html#abfdcaeb36762653b283689e31bfa269d',1,'MTMCSim::MSALSim::MSALSimuRes::FER()'],['../class_m_t_m_c_sim_1_1_mul_sour_sim_1_1_mul_sour_simu_res.html#af13d3f2c4ce03358187cc53166070c4a',1,'MTMCSim::MulSourSim::MulSourSimuRes::FER()'],['../class_m_t_m_c_sim_1_1_mul_stage_sim_1_1_mul_stage_simu_res.html#a4cd3cb804c72ce8b367263b427daba73',1,'MTMCSim::MulStageSim::MulStageSimuRes::FER()']]],
-  ['final_5fdecision_5fproc',['final_decision_proc',['../class_l_d_p_c_dec.html#ac729bca732034e771e109285bacfb80a',1,'LDPCDec']]],
+  ['final_5fdecision_5fproc',['final_decision_proc',['../class_m_t_m_c_sim_1_1_l_d_p_c_dec.html#a0035f2953b145876fdee1a06741bfba1',1,'MTMCSim::LDPCDec']]],
   ['formatfn',['formatFN',['../class_m_t_m_c_sim_1_1top_conf.html#ad296b181f99eeb241e238acd66d7e2f5',1,'MTMCSim::topConf']]]
 ];

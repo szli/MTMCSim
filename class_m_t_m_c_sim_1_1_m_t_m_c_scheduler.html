@@ -119,8 +119,8 @@ $(document).ready(function(){initNavTree('class_m_t_m_c_sim_1_1_m_t_m_c_schedule
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af47d9360a37a96d2d4fe87c73d6f8f31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html#af47d9360a37a96d2d4fe87c73d6f8f31">MTMCScheduler</a> (unsigned int nRunThreads_, unsigned int RNQSize, shared_ptr&lt; <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html">MTMCSimBase</a> &gt; simulator)</td></tr>
-<tr class="separator:af47d9360a37a96d2d4fe87c73d6f8f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252f97e6da262dbc4d135e06c95df211"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html#a252f97e6da262dbc4d135e06c95df211">MTMCScheduler</a> (unsigned int nRunThreads_, unsigned int RNQSize, boost::shared_ptr&lt; <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html">MTMCSimBase</a> &gt; simulator)</td></tr>
+<tr class="separator:a252f97e6da262dbc4d135e06c95df211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab12015e82fff0b4bc1425b8ae2643c74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html#ab12015e82fff0b4bc1425b8ae2643c74">MTMCScheduler</a> ()</td></tr>
 <tr class="memdesc:ab12015e82fff0b4bc1425b8ae2643c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor does nothing.  <a href="#ab12015e82fff0b4bc1425b8ae2643c74">More...</a><br/></td></tr>
 <tr class="separator:ab12015e82fff0b4bc1425b8ae2643c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a167540263d8f06b6867118568f41f17b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html#a167540263d8f06b6867118568f41f17b">start</a> ()</td></tr>
 <tr class="memdesc:a167540263d8f06b6867118568f41f17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start simulation.  <a href="#a167540263d8f06b6867118568f41f17b">More...</a><br/></td></tr>
 <tr class="separator:a167540263d8f06b6867118568f41f17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab26078d45d42976ba16939610a5ce5a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html#ab26078d45d42976ba16939610a5ce5a3">setSimulator</a> (shared_ptr&lt; <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html">MTMCSimBase</a> &gt; simulator_)</td></tr>
-<tr class="separator:ab26078d45d42976ba16939610a5ce5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d45f1ec0e20f297112da2652eca4d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html#aa0d45f1ec0e20f297112da2652eca4d3">setSimulator</a> (boost::shared_ptr&lt; <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html">MTMCSimBase</a> &gt; simulator_)</td></tr>
+<tr class="separator:aa0d45f1ec0e20f297112da2652eca4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ee97b0955c0ae17c6f56e98d548892"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html#a62ee97b0955c0ae17c6f56e98d548892">setNRunThreads</a> (unsigned int nRunThreads_)</td></tr>
 <tr class="separator:a62ee97b0955c0ae17c6f56e98d548892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e4070aca4de12050975d0d3683f9483"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html#a2e4070aca4de12050975d0d3683f9483">setRNQSize</a> (unsigned int RNQSize_)</td></tr>
@@ -145,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <p>In general, the Monte Carlo Simulation computes E[Y], Y = f(X), and X is the random sequence driving the simulation. The scheduler runs in the boss worker model, i.e., one thread generates random sequences X and several threads computes f(X) and obtain the samples of Y. Between the boss and the worker, there is a queue as a buffer of the random sequences. The simulator should be derived classes of the abstract calss <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html" title="The (abstract) base class for a multithread supported simulator. ">MTMCSimBase</a></p>
 <p>This model is suitable when the computation of the function f() is high. Usually this is the case in coding theory. In particular, in coding theory, X is the random sequences, f() contains encoding, channel effect if there is any, decoding. Y = 1 if the frame is in error after decoding so E[Y] = probably of error. This is a top level description of Monte Carlo. The X and Y here and X, Y in the multistage LDPC DSC are different.(There, they are source sequences and they corresponds to the X here. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af47d9360a37a96d2d4fe87c73d6f8f31"></a>
+<a class="anchor" id="a252f97e6da262dbc4d135e06c95df211"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -164,7 +164,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">shared_ptr&lt; <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html">MTMCSimBase</a> &gt;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html">MTMCSimBase</a> &gt;&#160;</td>
           <td class="paramname"><em>simulator</em>&#160;</td>
         </tr>
         <tr>
@@ -295,7 +295,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab26078d45d42976ba16939610a5ce5a3"></a>
+<a class="anchor" id="aa0d45f1ec0e20f297112da2652eca4d3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -305,7 +305,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void MTMCSim::MTMCScheduler::setSimulator </td>
           <td>(</td>
-          <td class="paramtype">shared_ptr&lt; <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html">MTMCSimBase</a> &gt;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html">MTMCSimBase</a> &gt;&#160;</td>
           <td class="paramname"><em>simulator_</em>)</td><td></td>
           <td></td>
         </tr>
@@ -346,7 +346,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_m_t_m_c_sim.html">MTMCSim</a></li><li class="navelem"><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html">MTMCScheduler</a></li>
-    <li class="footer">Generated on Sat Jul 13 2013 16:57:34 for MTMCSim by
+    <li class="footer">Generated on Sun Jul 21 2013 00:35:18 for MTMCSim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

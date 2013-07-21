@@ -102,14 +102,10 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="author"></a>
 Author and contact information</h1>
-<p>Author: Shizheng Li This project was done when he was a PhD student at Dept. of Electrical and Computer Engineering, Iowa State University</p>
-<p>Contact: szli AT iastate.edu</p>
-<pre class="fragment">All rights reserved. Copyright (c) 2010 Shizheng Li
-</pre><h1><a class="anchor" id="sys"></a>
-System Requirement</h1>
-<p>The project is portable between Windows and Linux. Tested under Windows 7 32-bit and 64-bit, Visual Studio 2010 and Fedora 13 with Gcc 4.4.</p>
-<p>The project requires Boost library. Tested under 1.43/1.44/1.47 version. Boost::thread must be built on the system. We use CMake as build tool. This allow cross-platform builds.</p>
-<p>To obtain high performance, the hardware should offer good parallel compute capability. Typically the number of working threads equals to the number of CPU cores. Tested under Intel Core Duo T8100, Intel Core i7-950, Intel Core2 6400 and Intel Xeon X5650.</p>
+<p>Author: Shizheng Li</p>
+<p>Contact: szli.code AT gmail</p>
+<p>This project was mostly done when he was a PhD student at Dept. of Electrical and Computer Engineering, Iowa State University.</p>
+<p>Most development was done between 2009 and 2010. Revisited in 2013 for a build system rework and making it open source.</p>
 <h1><a class="anchor" id="intro"></a>
 Introduction</h1>
 <p>This project indends to have a generic platform for mulththreaded Monte Carlo simulations. As long as the simulation is written according to the interface (abstract class <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html" title="The (abstract) base class for a multithread supported simulator. ">MTMCSim::MTMCSimBase</a>), the multithreading will be handled behind the scene. The multithreading scheduler runs under boss-worker mode. The boss thread generates random number sequences and the worker threads performs specified simulations. In current version, there is only one random number generator (RNG), thus one boss thread. We may have parallel RNG in the future. Therefore, it is best suited for simulations where the RN generation is simple compared to the algorithm run at each instance of the simulation. The project is designed in a purely object oriented manner in C++. This makes the project easy to maintain and extend. Almost all pointers in this project are boost::shared_ptr. All containers are from C++ STL. In this project, we call the data that gives one sample output to be a frame. For example, in communications theory, a frame is a data frame to be transmitted and received. In Monte Carlo simulation, we simulation many frames to get many samples and average over them. This terminalogy is used in communication and coding theory. In other fields, the terminalogy could be different.</p>
@@ -118,23 +114,40 @@ Introduction</h1>
 <h1><a class="anchor" id="structure"></a>
 Main Structure</h1>
 <h2><a class="anchor" id="core"></a>
-Core Classes</h2>
+Core Infrastructure Classes</h2>
 <p><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_scheduler.html" title="Multithread Monte Carlo Simulator Boss-Worker model scheduler. ">MTMCSim::MTMCScheduler</a>: Multithreading scheduler class. Handles thread creation, synchronization, buffering, etc.</p>
 <p><a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html" title="The (abstract) base class for a multithread supported simulator. ">MTMCSim::MTMCSimBase</a>: Base class of simulators. All simulator should be derived from this class.</p>
 <p><a class="el" href="class_m_t_m_c_sim_1_1_simu_para.html" title="Base class for simulation paramaters. ">MTMCSim::SimuPara</a>: Base class of simulation parameters. All simulaton parameters should be derived from this class. See details in the <a class="el" href="index.html#ui">User Interface</a> section.</p>
 <p>Factory pattern (<a class="el" href="class_m_t_m_c_sim_1_1_simu_factory.html" title="Factory class for classes derived from MTMCSimBase, the simulators. ">MTMCSim::SimuFactory</a>, <a class="el" href="class_m_t_m_c_sim_1_1_simu_para_factory.html" title="Factory class for classes derived from SimuPara, the simulation parameter objects. ">MTMCSim::SimuParaFactory</a>) is used to produce simulator objects and simulation parameter objects.</p>
 <p>The <a class="el" href="_c_make_files_22_88_811_82_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a> function is in RumSimu.cpp.</p>
 <h2><a class="anchor" id="simulators"></a>
-Current Implemented Simulators (Mainly for coding theory, for financial engineering applications, see another document)</h2>
+Current Implemented Simulators (Mainly for coding theory)</h2>
 <p><a class="el" href="class_m_t_m_c_sim_1_1_d_s_c_k_v_sim.html">MTMCSim::DSCKVSim</a>: Koetter-Vardy algorithm for distributed source coding.</p>
-<p><a class="el" href="class_m_t_m_c_sim_1_1_k_v_chan_sim.html" title="Koetter-Vardy decoding simulation for channel coding. ">MTMCSim::KVChanSim</a>: Koetter-Vardy algorithm for channel coding.</p>
-<p><a class="el" href="class_m_t_m_c_sim_1_1_mul_stage_sim.html" title="Simulator for multistage LDPC for two source distributed source coding. ">MTMCSim::MulStageSim</a>: Multistage LDPC codes for distributed source coding.</p>
+<p><a class="el" href="class_m_t_m_c_sim_1_1_k_v_chan_sim.html" title="Koetter-Vardy decoding simulation for channel coding. ">MTMCSim::KVChanSim</a>: Koetter-Vardy algorithm for channel coding. This is the simplest use of this simulation program.</p>
+<p><a class="el" href="class_m_t_m_c_sim_1_1_mul_stage_sim.html" title="Simulator for multistage LDPC for two source distributed source coding. ">MTMCSim::MulStageSim</a>: Multistage LDPC codes for distributed source coding. Use rate adaptive LDPC codes, designed by David Varodayan et.al. (<a href="http://ivms.stanford.edu/~varodayan/ldpca.html">http://ivms.stanford.edu/~varodayan/ldpca.html</a>)</p>
+<p><a class="el" href="class_m_t_m_c_sim_1_1_m_s_a_l_sim.html" title="Simulator for multistage LDPC for two source distributed source coding. ">MTMCSim::MSALSim</a>: Multistage LDPC codes for distributed source coding. Use optimized codes for AWGN channels, designed using PEG algorithm. Not rate adaptive code, but better performance</p>
 <p><a class="el" href="class_m_t_m_c_sim_1_1_mul_sour_sim.html" title="Multiple source linear correlation model simulation. ">MTMCSim::MulSourSim</a>: Multisource distributed source coding based LDPC codes for linear equation correlation.</p>
-<p>Several classes are defined for each of the specific simulators for their algorithm implementation. Omitted here.</p>
+<p>The above simulations work in a "FER" mode. We keep simulating frames until we see 100 error frames (configurable), and compute FER. If multi run mode is implemented, we change the code rate and <b>run new simulations</b> in order to get close to a code rate that gives FER &lt; 10^-3. The code rate is the "error free" code rate.</p>
+<p>For rate adaptive codes, we can also run simulation in a "Rate" mode. In one instance of Monte Carlo simulation, we change the code rate until the decoding is successful. This can be done in practice since the codes are rate-adaptive, just transmit more parity bits. We simulate 100 (configurable) frames and average the code rate, this is the average required code rate to achieve "error free" transmission.</p>
+<p><a class="el" href="class_m_t_m_c_sim_1_1_mul_stage_sim_rate.html" title="Simulator for multistage LDPC for two source distributed source coding. ">MTMCSim::MulStageSimRate</a> and <a class="el" href="class_m_t_m_c_sim_1_1_mul_sour_sim_rate.html" title="Multiple source linear correlation model simulation. ">MTMCSim::MulSourSimRate</a> implements the "Rate" mode.</p>
+<p>A simulation that implements <a class="el" href="class_m_t_m_c_sim_1_1_multi_run_simu_base.html" title="The base class for the simulators that are multi-runnable and support our multithread interface...">MTMCSim::MultiRunSimuBase</a> can run in "multi run" mode. It allows you to change your parameter and run the simulation again, until you set a quit flag to be true. Currently it is used to change the code rate heuristically to find rate that gives FER&lt;10^-3.</p>
 <p>For a complete list of class hierarchy, please see <a href="hierarchy.html">Class Hierarchy</a> .</p>
+<h2><a class="anchor" id="utils"></a>
+Utilility classes</h2>
+<p>Here are some classes and functionarities that may be reused by other research projects.</p>
+<p><a class="el" href="class_m_t_m_c_sim_1_1pdf_x_y.html" title="Handles joint pmf for two sources. ">MTMCSim::pdfXY</a> Joint probablity densigy (mass) function for two non-binary sources. It can be qary symmetric sources, or pdf (pmf more procisely) given by a file. It computes entropy, conditional entropy, mutual information, marginal pdf, etc.</p>
+<p><a class="el" href="class_m_t_m_c_sim_1_1discrete__distribution.html" title="Discrete Distribution, generates random number according to given pmf from uniform RVs...">MTMCSim::discrete_distribution</a> Random number generator for 1D general discrete probability distributions. It follows boost::random interface convention. It takes in a vector of double that gives the pmf. The algorithm is "slow start and fast generate". At startup time, it creates two tables for generating RNs, it is a bit slow, but when actual generating discrete random RVs, it is very fast. (So it is different from the "interval look up"). The table can be cached and reused, further reduces the start up time after one distribution is used once.</p>
+<p><a class="el" href="class_m_t_m_c_sim_1_1nb_to_bin_p_d_f_conv.html" title="Converts a pmf on alphabet with size nbSize to log_2(nbSize) binary sources with a joint pdf...">MTMCSim::nbToBinPDFConv</a> Converts a pmf on alphabet with size nbSize to log_2(nbSize) binary sources with a joint pdf. Also computes conditional entropies and conditional probabilities condition on K number of bits where K between 0 to log_2(nbSize).</p>
+<p><a class="el" href="class_m_t_m_c_sim_1_1_l_d_p_c_dec.html">MTMCSim::LDPCDec</a> General LDPC decoder using belief-propgation algorithm written by my advisor Aditya Ramamoorthy. It supports ordinary LDPC decoding (find a code word) or decode to syndrome (finding a vector in a coset corresponding to the syndrome), which is useful for distributed source coding.</p>
+<h1><a class="anchor" id="sys"></a>
+Build and Environment</h1>
+<p>The project is portable between Windows and Linux. Tested under Windows 7 32-bit and 64-bit, Visual Studio 2010 and Fedora 13 and Centos 6.3 with Gcc 4.4.</p>
+<p>The project requires Boost library. No strict requirement on versions. Tested under 1.43/1.44/1.47 version. Boost::thread must be built on the system. Boost shared_ptr is heavily used.</p>
+<p>We use CMake as the build tool. This allow cross-platform builds. You can generate Visual Studio solution/project files, or make files, or nmake files, etc.</p>
+<p>To obtain high performance, the hardware should offer good parallel compute capability. Typically the number of working threads equals to the number of CPU cores.</p>
 <h1><a class="anchor" id="ui"></a>
 User Interface</h1>
-<p>The user interface is written in a pure OO manner and intended to potentially support graphic user interface in the future. </p>
+<p>The user interface is written in a pure OO manner and intended to potentially support GUI or Python in the future. </p>
 <h2><a class="anchor" id="input"></a>
 Input files</h2>
 <p>The input parameters are given in text files. Typically, there are two input files. One is the top level configuration file, the file name is MTMCSimconf.txt by default, or is the input paramater of the exetuable file. A typical top configuration file looks like as follows.</p>
@@ -177,13 +190,13 @@ Parameter handling under the hood</h2>
 <h1><a class="anchor" id="howto"></a>
 How to write a simulation</h1>
 <p>To write a specified simulation, a simulator class should be derived from <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html" title="The (abstract) base class for a multithread supported simulator. ">MTMCSim::MTMCSimBase</a> class. See the doc of <a class="el" href="class_m_t_m_c_sim_1_1_m_t_m_c_sim_base.html" title="The (abstract) base class for a multithread supported simulator. ">MTMCSim::MTMCSimBase</a> for more information.</p>
-<p>A good example of such a simulator with detailed comments is <a class="el" href="class_m_t_m_c_sim_1_1_mul_stage_sim.html" title="Simulator for multistage LDPC for two source distributed source coding. ">MTMCSim::MulStageSim</a>. </p>
+<p>A good example of such a simulator with detailed comments is <a class="el" href="class_m_t_m_c_sim_1_1_k_v_chan_sim.html" title="Koetter-Vardy decoding simulation for channel coding. ">MTMCSim::KVChanSim</a> and <a class="el" href="class_m_t_m_c_sim_1_1_mul_stage_sim.html" title="Simulator for multistage LDPC for two source distributed source coding. ">MTMCSim::MulStageSim</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jul 13 2013 16:57:34 for MTMCSim by
+    <li class="footer">Generated on Sun Jul 21 2013 00:35:18 for MTMCSim by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
